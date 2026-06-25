@@ -1,0 +1,95 @@
+/*===========================*/
+/*           FONTS           */
+/*===========================*/
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../assets/fonts/dm-sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: 400 600;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url('../assets/fonts/dm-mono/DMMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url('../assets/fonts/dm-mono/DMMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+
+
+/*===========================*/
+/*         VARIABLES         */
+/*===========================*/
+
+:root {
+
+    --neutral-900: #2c2721;
+    --neutral-800: #3e3428;
+    --neutral-700: #594b3b;
+    --neutral-600: #7a6a57;
+    --neutral-400: #e3ddd3;
+    --neutral-200: #f1ede9;
+    --neutral-100: #fbf6ef;
+    --neutral-50: #fdfbf7;
+    --neutral-0: #ffffff;
+
+    --sun-500: #edb73b;
+    --sun-300: #f5d88a;
+    --sun-200: #ffde7a;
+    --sun-50: #fff4db;
+
+    --terracotta-700: #9f3e1d;
+    --terracotta-600: #b6421b;
+    --terracotta-500: #c25a2e;
+    --terracotta-400: #e0793e;
+
+    --blue-500: #586ac6;
+
+    --rose-500: #bf4a71;
+
+
+    --font-serif: 'Fraunce', serif;
+    --font-primary: 'DM Sans', Helvetica;
+    --font-secondary: 'DM Mono', Arial;
+
+}
+
+
+
+/*===========================*/
+/*            BODY           */
+/*===========================*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    font-size: 0.875rem;
+}
