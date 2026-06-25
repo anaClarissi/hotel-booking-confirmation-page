@@ -20,50 +20,100 @@
 </head>
 <body>
 
-  <nav class="sidebar navbar navbar-expand-lg">
-  
-    <a href="#" class="navbar-brand">
-
-      <img src="src/assets/images/logo.svg" alt="Maison Soleil Logo" id="logo">
+  <nav id="sidebar" class="navbar navbar-expand-lg">
     
-    </a>
+    <div class="container-fluid">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="#" class="navbar-brand">
 
-      <span class="navbar-toggler-icon"></span>
+        <img src="src/assets/images/logo.svg" alt="Maison Soleil Logo" id="logo">
+      
+      </a>
 
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-    <div class="collapse navbar-collapse" id="navbarNav">
+        <span class="toggler-icon"></span>
 
-      <ul class="navbar-nav">
+      </button>
 
-        <li class="nav-item"><a href="#" class="nav-link">Your stay 1</a></li>
+      <div class="collapse navbar-collapse" id="navbarNav">
 
-        <li class="nav-item"><a href="#" class="nav-link">The house</a></li>
+        <ul class="navbar-nav">
 
-        <li class="nav-item"><a href="#" class="nav-link">Around town</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link--content">
+                <img src="src/assets/images/icon-bed.svg" alt="Bed Icon" class="nav-link--icon">
+                <span>Your stay</span>
+              </div>
+              <span class="notification">1</span>
+            </a>
+          </li>
 
-        <li class="nav-item"><a href="#" class="nav-link">Breakfast</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-linl--content">
+                <img src="src/assets/images/icon-house.svg" alt="House Icon" class="nav-link--icon">
+                <span>The house</span>
+              </div>
+            </a>
+          </li>
 
-        <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link--content">
+                <img src="src/assets/images/icon-pin.svg" alt="Pin Icon" class="nav-link--icon">
+                <span>Around town</span>
+              </div>
+            </a>
+          </li>
 
-      </ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link--content">
+                <img src="src/assets/images/icon-breakfast-outline.svg" alt="Breakfast Icon" class="nav-link--icon">
+                <span>Breakfast</span>
+              </div>
+            </a>
+          </li>
 
-      <div class="local-weather">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div class="nav-link--content">
+                <img src="src/assets/images/icon-mail.svg" alt="Mail Icon" class="nav-link--icon">
+                <span>Messages</span>
+              </div>
+            </a>
+          </li>
 
-        Today in Cassis
+        </ul>
 
-        27°
+        <div class="local-content">
 
-        Sunny · light breeze
+          <div class="local-weather" aria-labelledby="temperature">
 
-      </div>
+            <p class="weather-primary-info">Today in Cassis</p>
 
-      <div class="local-infors">
-        Est. 1987
-        Maison Soleil · 12 Rue des Oliviers · Cassis
-        © 2026 Maison Soleil
+            <p class="temperature" aria-label="temperature">27°</p>
+
+            <p class="weather-secondary-info">Sunny · light breeze</p>
+
+            <img src="src/assets/images/icon-weather.svg" alt="Weather Image" class="weather-background">
+
+          </div>
+
+          <div class="local-infors">
+
+            <p>Est. 1987</p>
+
+            <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+
+            <p>© 2026 Maison Soleil</p>
+            
+          </div>
+
+        </div>
+
       </div>
 
     </div>
@@ -161,7 +211,6 @@
         Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
 
       </div>
-      
     </section>
 
   </main>
