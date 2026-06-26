@@ -544,6 +544,7 @@ body {
 .guest-infor .card {
     border-radius: 1rem;
     border: 1px solid var(--neutral-400);
+    padding: 1.25em;
     gap: 1rem;
 }
 
