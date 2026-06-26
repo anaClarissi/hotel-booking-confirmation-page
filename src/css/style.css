@@ -690,4 +690,17 @@ body {
         flex-direction: column !important;
     }
 
+
+
+
+    /*===========================*/
+    /*           MAIN            */
+    /*===========================*/
+
+    #main {
+        margin-left: var(--sidebar-width);
+        padding: 2rem;
+    }
+
+
 }
