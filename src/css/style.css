@@ -107,6 +107,12 @@ body {
     border-bottom: 1px solid var(--neutral-400);
 }
 
+.navbar-brand:focus {
+    outline: 2px solid var(--terracotta-700);
+    outline-offset: 0.5rem;
+    border-radius: 1rem;
+}
+
 .navbar-toggler {
     padding: 0.5rem;
 }
@@ -170,6 +176,17 @@ body {
 .nav-link:has(.notification) {
     background-color: var(--neutral-0);
     padding-right: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: var(--neutral-0);
+}
+
+.nav-link:focus {
+    outline: 2px solid var(--terracotta-700);
+    outline-offset: 2px;
+    box-shadow: none;
 }
 
 .nav-link .notification {
@@ -311,13 +328,25 @@ body {
     border-radius: 2rem;
 }
 
+.btn-receipt:focus,
+.btn-calendar:focus {
+    outline: 2px solid var(--terracotta-700);
+    outline-offset: 0.25rem;
+}
+
 .btn-receipt {
     color: var(--neutral-800);
     border-color: var(--neutral-400);
     background-color: var(--neutral-100);
 }
 
-.btn-calendar {
+.btn-receipt:hover {
+    background-color: var(--neutral-400);
+}
+
+.btn-calendar,
+.btn-calendar:hover,
+.btn-calendar:focus {
     color: var(--neutral-100);
     border-color: var(--neutral-800);
     background-color: var(--neutral-800);
@@ -621,6 +650,18 @@ body {
 .guest-infor .list-item .copy {
     font-size: 0.75rem;
     margin-left: 0.25rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.guest-infor .list-item .copy:hover {
+    background-color: var(--neutral-400);
+}
+
+.guest-infor .list-item .copy:focus {
+    outline: 2px solid var(--terracotta-700);
+    outline-offset: 2px;
 }
 
 .card-arrival .guest-card--header {
@@ -743,18 +784,6 @@ body {
         max-width: 30rem;
     }
 
-    .hover-to-fan-text {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 0.5rem;
-        font-family: var(--font-secondary);
-        color: var(--neutral-600);
-        text-transform: uppercase;
-    }
-
 
 
     /*===========================*/
@@ -800,4 +829,58 @@ body {
         font-size: 1rem;
     }
 
+    .guest-infor .list-group {
+        gap: 0.25rem;
+        font-weight: 400;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    /*===========================*/
+    /*  RECEIPTS BOOKING CARDS   */
+    /*===========================*/
+
+    .hover-to-fan-text {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.5rem;
+        font-family: var(--font-secondary);
+        color: var(--neutral-600);
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .receipts-booking--cards .card {
+        transition: transform .3s ease-in-out;
+    }
+
+    .receipts-booking--cards:has(.hover-to-fan-text:hover) {
+        background: url('../assets/images/illustration-sun.svg') no-repeat center center;
+    }
+
+
+
+    /*===========================*/
+    /*        BOOKING CARD       */
+    /*===========================*/
+
+    .receipts-booking--cards:has(.hover-to-fan-text:hover) .card-booking {
+        transform: rotate(-4deg) translateX(20%);
+    }
+
+
+
+    /*===========================*/
+    /*        RECEIPT CARD       */
+    /*===========================*/
+
+    .receipts-booking--cards:has(.hover-to-fan-text:hover) .card-receipt {
+        transform: rotate(4deg) translateX(-20%);
+    }
+    
 }
