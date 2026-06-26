@@ -728,11 +728,14 @@ body {
 
     .receipts-booking--cards {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         gap: 0;
     }
 
     .receipts-booking--cards .card {
         flex: 1;
+        max-width: 30rem;
     }
 
 
