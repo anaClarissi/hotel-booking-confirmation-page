@@ -768,6 +768,7 @@ body {
         display: grid !important;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 
     .guest-card--body {
