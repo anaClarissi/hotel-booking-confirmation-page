@@ -703,4 +703,19 @@ body {
     }
 
 
+
+    /*===========================*/
+    /*        MAIN HEADER        */
+    /*===========================*/
+
+    .main-header .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .btn-receipt,
+    .btn-calendar {
+        min-width: 10rem;
+    }
+
 }
