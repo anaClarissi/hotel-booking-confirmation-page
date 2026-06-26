@@ -10,12 +10,30 @@ async function copy () {
 
         await navigator.clipboard.writeText(password);
 
-        console.log("Content copied to clipboard!");
+        showAlert();
 
     } catch (error) {
 
         console.error("Failed copy: ", error);
 
     }
+
+}
+
+function showAlert() {
+
+    const alert = document.querySelector("#copy-alert");
+
+    alert.hidden = false;
+
+    alert.classList.add("show");
+
+    setTimeout(() => {
+
+        alert.hidden = true;
+
+        alert.classList.remove("show");
+
+    }, 2000);
 
 }
