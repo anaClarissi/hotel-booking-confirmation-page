@@ -422,6 +422,7 @@ body {
     gap: 1rem;
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.123);
     transform: rotate(-1deg);
+    background-color: var(--neutral-50);
 }
 
 .card-receipt--header,
@@ -716,6 +717,41 @@ body {
     .btn-receipt,
     .btn-calendar {
         min-width: 10rem;
+    }
+
+
+
+    /*===========================*/
+    /*  RECEIPTS BOOKING CARDS   */
+    /*===========================*/
+
+    .receipts-booking--cards {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .receipts-booking--cards .card {
+        flex: 1;
+    }
+
+
+
+    /*===========================*/
+    /*        BOOKING CARD       */
+    /*===========================*/
+
+    .card-booking {
+        transform: rotate(4deg);
+    }
+
+
+
+    /*===========================*/
+    /*        RECEIPT CARD       */
+    /*===========================*/
+
+    .card-receipt {
+        transform: rotate(-4deg);
     }
 
 }
