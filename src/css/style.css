@@ -754,4 +754,20 @@ body {
         transform: rotate(-4deg);
     }
 
+
+
+    /*===========================*/
+    /*        GUEST INFORS       */
+    /*===========================*/
+
+    .guest-infor {
+        display: grid !important;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .guest-card--body {
+        gap: 1rem;
+    }
+
 }
