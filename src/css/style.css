@@ -329,7 +329,7 @@ body {
 /*  RECEIPTS BOOKING CARDS   */
 /*===========================*/
 
-.receipts-booking--cards {
+.receipts-booking--cards  {
     flex-direction: column-reverse;
     gap: 1rem;
     padding: 1.5rem 0.5rem;
@@ -343,6 +343,10 @@ body {
 
 .card div {
     display: flex;
+}
+
+.hover-to-fan-text {
+    display: none;
 }
 
 
@@ -727,6 +731,7 @@ body {
     /*===========================*/
 
     .receipts-booking--cards {
+        position: relative;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -738,6 +743,18 @@ body {
         max-width: 30rem;
     }
 
+    .hover-to-fan-text {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.5rem;
+        font-family: var(--font-secondary);
+        color: var(--neutral-600);
+        text-transform: uppercase;
+    }
+
 
 
     /*===========================*/
@@ -746,6 +763,10 @@ body {
 
     .card-booking {
         transform: rotate(4deg);
+    }
+
+    .card-booking--body-text {
+        font-size: 1rem;
     }
 
 
