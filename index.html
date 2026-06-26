@@ -124,17 +124,17 @@
   
     <header class="main-header">
 
-      <p><span>Booking</span> <span>·</span> <span>Confirmed</span></p>
+      <p class="booking-text"><span>Booking</span> <span>·</span> <span>Confirmed</span></p>
 
       <div class="header-content">
         
-        <p>Bienvenue, <span>Lucia.</span></p>
+        <h1 class="welcome-message">Bienvenue, <span>Lucia.</span><h1>
         
         <div class="header-content--actions">
           
-          <button class="btn" type="button">Print receipt</button>
+          <button class="btn btn-receipt" type="button">Print receipt</button>
           
-          <button class="btn" type="button">Add to calendar</button>
+          <button class="btn btn-calendar" type="button">Add to calendar</button>
           
         </div>
         
@@ -144,73 +144,220 @@
 
     <section class="receipts-booking--cards">
 
-      <div class="card receipt">
-        Receipt
-        № MS-2026
-        0421-AH
-        Your stay
-        Check in
-        25 Apr
-        Saturday · 15:00
-        Check out
-        29 Apr
-        Wednesday · 11:00
-        Room · La Garrigue · 4 nights
-        € 620.00
-        Breakfast · 2 guests
-        € 96.00
-        Tourist tax
-        € 14.40
-        Total paid
-        € 730.40
-        Paid · Wise · GBP
+      <div class="card card-receipt">
+
+        <div class="card-receipt--header">
+
+          <div class="card-receipt--receipt">
+            <span>Receipt</span>
+            <span>№ MS-2026</span>
+          </div>
+
+          <div class="card-receipt--stay">
+            <span class="card-receipt--stay-title">Your stay</span>
+            <span>0421-AH</span>
+          </div>
+
+        </div>
+
+        <div class="card-receipt--body">
+
+          <div class="card-receipt--primary-cotent">
+
+            <div class="card-receipt--checkin">
+
+              <h4 class="card-receipt--content-title">Check in</h4>
+
+              <span class="card-receipt--content-day">25 Apr</span>
+
+              <span class="card-receipt--content-dayweek">Saturday · 15:00</span>
+
+            </div>
+
+            <div class="card-receipt--checkout">
+
+              <h4 class="card-receipt--content-title">Check out</h4>
+
+              <span class="card-receipt--content-day">29 Apr</span>
+
+              <span class="card-receipt--content-dayweek">Wednesday · 11:00</span>
+
+            </div>
+
+          </div>
+
+          <div class="card-receipt--secondary-content">
+
+            <ul class="card-receipt--list">
+
+              <li class="list-item">
+                <span>Room · La Garrigue · 4 nights</span>
+                <span>€ 620.00</span>
+              </li>
+
+              <li class="list-item">
+                <span>Breakfast · 2 guests</span>
+                <span>€ 96.00</span>
+              </li>
+
+              <li class="list-item tax">
+                <span>Tourist tax</span>
+                <span>€ 14.40</span>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="card-receipt--footer">
+
+          <div class="total-paid">
+            <span>Total paid</span>
+            <span class="paid">€ 730.40</span>
+          </div>
+
+          <div class="invoice">
+            <span>Paid · Wise · GBP</span>
+            <img src="src/assets/images/icon-barcode.svg" alt="Barcode Icon" class="barcode-img">
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="card booking">
-        Welcome
-        A note from your host, Margaux.
-        We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-        Room
-        La Garrigue
+      <div class="card card-booking">
+
+        <div class="card-booking--header">
+          
+          <p class="card-booking--welcome-text">Welcome Card</p>
+
+          <img src="src/assets/images/icon-sun.svg" alt="Sun Icon" class="card-booking--sun-img" aria-hidden="true">
+
+        </div>
+
+        <div class="card-booking--body">
+
+          <h3 class="card-booking--body-title">A note from your host, <span>Margaux</span>.</h3>
+
+          <p class="card-booking--body-text">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+
+        </div>
+
+        <div class="card-booking--footer">
+          <p class="card-booking--footer-text">
+            <span>Room</span>
+            La Garrigue
+          </p>
+        </div>
+
       </div>
       
     </section>
 
     <section class="guest-infor">
 
-      <div class="card arrival">
+      <div class="card card-arrival">
 
-        Arrival
-        01
-        Check-in from 15:00
-        Sat, 25 April
-        Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+        <div class="guest-card--header">
+
+          <div class="guest-card--header-content">
+
+            <div class="guest-card--header-icon">
+              <img src="src/assets/images/icon-key.svg" alt="Key Icon" aria-hidden="true">
+            </div>
+            
+            <span>Arrival</span>
+
+          </div>
+
+          <span>01</span>
+
+        </div>
+
+        <div class="guest-card--body">
+
+          <h4 class="guest-card--title">Check-in from 15:00</h4>
+
+          <p class="guest-card--subtitle">Sat, 25 April</p>
+
+          <p class="guest-card--text">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+
+        </div>
 
       </div>
       
-      <div class="card-wifi">
+      <div class="card card-wifi">
         
-        Wifi
-        02
-        Le Soleil · Guest
-        Password below
-        Network
-        Le Soleil · Guest
-        Password
-        soleil-2026
-        Copy
+        <div class="guest-card--header">
+
+          <div class="guest-card--header-content">
+
+            <div class="guest-card--header-icon">
+              <img src="src/assets/images/icon-wifi.svg" alt="Wifi Icon" aria-hidden="true">
+            </div>
+            
+            <span>Wifi</span>
+          
+          </div>
+
+          <span>02</span>
+
+        </div>
+
+        <div class="guest-card--body">
+
+          <h4 class="guest-card--title">Le Soleil · Guest</h4>
+
+          <p class="guest-card--subtitle">Password below</p>
+
+          <ul class="list-group">
+
+            <li class="list-item">
+              <span class="info">Network</span>
+              <span>Le Soleil · Guest</span>
+            </li>
+
+            <li class="list-item">
+              <span class="info">Password</span>
+              <span>soleil-2026 <span class="copy">Copy</span></span>
+            </li>
+          </ul>
+
+        </div>
 
       </div>
 
-      <div class="card breakfast">
+      <div class="card card-breakfast">
 
-        Breakfast
-        03
-        Served 8 - 10:30
-        On the terrace
-        Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+        <div class="guest-card--header">
+
+          <div class="guest-card--header-content">
+
+            <div class="guest-card--header-icon">
+              <img src="src/assets/images/icon-breakfast.svg" alt="Breakfast Icon" aria-hidden="true">
+            </div>
+
+            <span>Breakfast</span>
+
+          </div>
+
+          <span>03</span>
+
+        </div>
+
+        <div class="guest-card--body">
+
+          <h4 class="guest-card--title">Served 8 - 10:30</h4>
+
+          <p class="guest-card--subtitle">On the terrace</p>
+
+          <p class="guest-card--text">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+
+        </div>
 
       </div>
+
     </section>
 
   </main>
